@@ -16,30 +16,30 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header-border">
-      <div class="header-section container">
-        <a href="#" lang="en" class="logo header"
-          >Web<span class="logo-studio-header">Studio</span></a
-        >
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-items"><a href="./index.html" class="page">Студия</a></li>
-            <li class="nav-items"><a href="#" class="page current">Портфолио</a></li>
-            <li class="nav-items"><a href="#" class="page">Контакты</a></li>
+    <header class="header header__border">
+      <div class="header__section container">
+        <a href="#" lang="en" class="logo">Web<span class="logo__header">Studio</span></a>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item"><a href="./index.html" class="nav__page">Студия</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__page nav__page--current">Портфолио</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__page">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact">
-          <li class="contact-list">
-            <a href="mailto:info@devstudio.com" target="_blank" class="details">
-              <svg class="svg-envelope">
+        <ul class="contact contact--position">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" target="_blank" class="contact__details">
+              <svg class="contact__svg-envelope">
                 <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-list">
-            <a href="tel:+380961111111" target="_blank" class="details"
-              ><svg class="svg-smartphone">
+          <li class="contact__item">
+            <a href="tel:+380961111111" target="_blank" class="contact__details"
+              ><svg class="contact__svg-smartphone">
                 <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -55,99 +55,103 @@
         <div class="container">
           <h2 class="visually-hidden">Portfolio</h2>
           <ul class="filter-list">
-            <li class="filter-item"><button type="button" class="filter-button">Всё</button></li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Веб-сайты</button>
+            <li class="filter-list__item">
+              <button type="button" class="button button--filter">Всё</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Приложения</button>
+            <li class="filter-list__item">
+              <button type="button" class="button button--filter">Веб-сайты</button>
             </li>
-            <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
-            <li class="filter-item">
-              <button type="button" class="filter-button">Маркетинг</button>
+            <li class="filter-list__item">
+              <button type="button" class="button button--filter">Приложения</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="button button--filter">Дизайн</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="button button--filter">Маркетинг</button>
             </li>
           </ul>
           <!-- portfolio projects list -->
-          <ul class="progects-list">
-            <li class="progect-item">
-              <div class="progect-image">
+          <ul class="progect-list">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-1.jpg" alt="Технокряк" />
               </div>
-              <div class="progect-description">
-                <h2>Технокряк</h2>
-                <p>Веб-сайт</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Технокряк</h2>
+                <p class="progect__direction">Веб-сайт</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-2.jpg" alt="Постер New Orlean vs Golden Star" />
               </div>
-              <div class="progect-description">
-                <h2>Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Постер New Orlean vs Golden Star</h2>
+                <p class="progect__direction">Дизайн</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-3.jpg" alt="Ресторан Seafood" />
               </div>
-              <div class="progect-description">
-                <h2>Ресторан Seafood</h2>
-                <p>Приложение</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Ресторан Seafood</h2>
+                <p class="progect__direction">Приложение</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-4.jpg" alt="Проект Prime" />
               </div>
-              <div class="progect-description">
-                <h2>Проект Prime</h2>
-                <p>Маркетинг</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Проект Prime</h2>
+                <p class="progect__direction">Маркетинг</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-5.jpg" alt="Проект Boxes" />
               </div>
-              <div class="progect-description">
-                <h2>Проект Boxes</h2>
-                <p>Приложение</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Проект Boxes</h2>
+                <p class="progect__direction">Приложение</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-6.jpg" alt="Inspiration has no Borders" />
               </div>
-              <div class="progect-description">
-                <h2>Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Inspiration has no Borders</h2>
+                <p class="progect__direction">Веб-сайт</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-7.jpg" alt="Издание Limited Edition" />
               </div>
-              <div class="progect-description">
-                <h2>Издание Limited Edition</h2>
-                <p>Дизайн</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Издание Limited Edition</h2>
+                <p class="progect__direction">Дизайн</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
-                <img src="./images/pf-7.jpg" alt="Проект LAB" />
+            <li class="progect progect--margin">
+              <div class="progect__image">
+                <img src="./images/pf-8.jpg" alt="Проект LAB" />
               </div>
-              <div class="progect-description">
-                <h2>Проект LAB</h2>
-                <p>Маркетинг</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Проект LAB</h2>
+                <p class="progect__direction">Маркетинг</p>
               </div>
             </li>
-            <li class="progect-item">
-              <div class="progect-image">
+            <li class="progect progect--margin">
+              <div class="progect__image">
                 <img src="./images/pf-9.jpg" alt="Growing Business" />
               </div>
-              <div class="progect-description">
-                <h2>Growing Business</h2>
-                <p>Приложение</p>
+              <div class="progect__description">
+                <h2 class="progect__owner">Growing Business</h2>
+                <p class="progect__direction">Приложение</p>
               </div>
             </li>
           </ul>
@@ -156,9 +160,9 @@
     </main>
     <!-- footer -->
     <footer class="footer-section">
-      <div class="container footer-flex">
+      <div class="container footer">
         <div>
-          <a href="#" lang="en" class="logo">Web<span class="logo-studio-footer">Studio</span></a>
+          <a href="#" lang="en" class="logo">Web<span class="logo__footer">Studio</span></a>
           <address class="address">
             <ul>
               <li>
@@ -166,18 +170,18 @@
                   href="https://goo.gl/maps/kM4UqTTEP7NsfNpt6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="contact-address"
+                  class="address__contact"
                 >
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" target="_blank" class="contact-details"
+                <a href="mailto:info@devstudio.com" target="_blank" class="address__details"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+380961111111" target="_blank" class="contact-details"
+                <a href="tel:+380961111111" target="_blank" class="address__details"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -185,45 +189,46 @@
           </address>
         </div>
         <div class="footer-social-section">
-          <p class="social-request-text">присоединяйтесь</p>
-          <ul class="footer-social-list">
-            <li class="footer-social">
-              <a href="#" class="footer-icon-link">
-                <svg class="footer-icon-svg">
+          <p class="footer-social-section__text">присоединяйтесь</p>
+          <ul class="social-icon social-icon--footer">
+            <li class="social-icon__list">
+              <a href="#" class="social-icon__link social-icon__link--footer">
+                <svg class="social-icon__svg social-icon__svg--footer">
                   <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social">
-              <a href="#" class="footer-icon-link"
-                ><svg class="footer-icon-svg">
+            <li class="social-icon__list">
+              <a href="#" class="social-icon__link social-icon__link--footer"
+                ><svg class="social-icon__svg social-icon__svg--footer">
                   <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social">
-              <a href="#" class="footer-icon-link"
-                ><svg class="footer-icon-svg">
+            <li class="social-icon__list">
+              <a href="#" class="social-icon__link social-icon__link--footer"
+                ><svg class="social-icon__svg social-icon__svg--footer">
                   <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social">
-              <a href="#" class="footer-icon-link"
-                ><svg class="footer-icon-svg">
+            <li class="social-icon__list">
+              <a href="#" class="social-icon__link social-icon__link--footer"
+                ><svg class="social-icon__svg social-icon__svg--footer">
                   <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="footer-form" action="DescriptionForm">
-          <label class="footer-label">
-            <input class="footer-input" type="email" placeholder="E-mail" /> Подпишитесь на рассылку
+        <form class="footer-form footer-form--position" action="DescriptionForm">
+          <label class="footer-form__label">
+            <input class="footer-form__input" type="email" placeholder="E-mail" name="email" />
+            Подпишитесь на рассылку
           </label>
-          <button class="footer-botton" type="submit">
-            <span class="footer-botton-text">Подписаться</span>
-            <svg class="footer-botton-image">
+          <button class="button button--footer" type="submit">
+            <span class="button__footer-text">Подписаться</span>
+            <svg class="button__footer-image">
               <use href="./images/icons/symbol-defs.svg#twitter"></use>
             </svg>
           </button>

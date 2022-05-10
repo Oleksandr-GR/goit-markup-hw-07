@@ -95,13 +95,6 @@ body {
     --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 /*
 Grouping content
 ================

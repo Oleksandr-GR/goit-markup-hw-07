@@ -335,13 +335,13 @@ summary {
   display: list-item;
 }
 
-.social-icon__link, .customers__link, .item__image, .form--button, .cross-button {
+.social-icon__link, .social-icon, .customers__link, .item__image, .form--button, .cross-button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-icon, .contact__details, .contact, .header__section {
+.contact__details, .contact, .header__section {
   display: flex;
   align-items: center;
 }
@@ -1006,7 +1006,7 @@ summary {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon__list + .social-icon__list {
+.social-icon__item + .social-icon__item {
   margin-left: 10px;
 }
 .social-icon__svg {
